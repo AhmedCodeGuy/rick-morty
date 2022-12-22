@@ -11,7 +11,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
+  <a href="https://rick-morty-tau.vercel.app">
     <img src="public/logo.png" alt="Logo" height="300">
   </a>
 
