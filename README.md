@@ -52,8 +52,6 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://rick-morty-tau.vercel.app)
-
 You will be able to show all Rick and Morty's characters and show more details about each one when you click on any character.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
