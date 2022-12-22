@@ -1,59 +1,41 @@
+import { Button, Typography } from '@mui/material'
 import type { NextPage } from 'next'
 import Head from 'next/head'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-import Counter from '../features/counter/Counter'
 import styles from '../styles/Home.module.css'
 
 const IndexPage: NextPage = () => {
+  const router = useRouter()
+
   return (
     <div className={styles.container}>
       <Head>
-        <title>Redux Toolkit</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Rick & Morty</title>
+        <link rel='icon' href='/favicon.ico' />
       </Head>
+
       <header className={styles.header}>
-        <img src="/logo.svg" className={styles.logo} alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
+        <Link href='/characters'>
+          <img src='/logo.png' className={styles.logo} alt='logo' />
+        </Link>
+
         <span>
-          <span>Learn </span>
-          <a
-            className={styles.link}
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Typography variant='h1'>Rick & Morty</Typography>
+          <Typography variant='h4'>
+            Learn all about rick and morty's TV Show characters
+          </Typography>
+          <br />
+          <Button
+            size='large'
+            variant='outlined'
+            onClick={() => {
+              router.push('/characters')
+            }}
           >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className={styles.link}
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className={styles.link}
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className={styles.link}
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
+            Let's Go
+          </Button>
         </span>
       </header>
     </div>
